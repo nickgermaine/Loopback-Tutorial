@@ -12,7 +12,7 @@
             "node_args": "--max_old_space_size=2048"
         },
         {
-            "name": "demoapi1",
+            "name": "demoapi2",
             "script": "./server/server.js",
             "instances": 2,
             "exec_mode": "cluster",
