@@ -90,7 +90,7 @@ app.models.RoleMapping.find((err, rm) => {
   if(!err && rm.length === 0){
     app.models.user.findOne({where: {role: "admin"}}, (userErr, user) => {
       if(!userErr && user){
-        app.models.Role.find({where: {name: 'admin'}}, (roleErr, result) => {
+        app.models.Role.findOne({where: {name: 'admin'}}, (roleErr, result) => {
           if(!roleErr && result){
             result.principals.create({
               principalType: app.models.RoleMapping.USER,
