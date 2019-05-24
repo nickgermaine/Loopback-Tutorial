@@ -3,7 +3,7 @@
         {
             "name": "demoapi1",
             "script": "./server/server.js",
-            "instances": 1,
+            "instances": 2,
             "exec_mode": "cluster",
             "env": {
                 "NODE_ENV": "production",
@@ -14,7 +14,7 @@
         {
             "name": "demoapi1",
             "script": "./server/server.js",
-            "instances": 1,
+            "instances": 2,
             "exec_mode": "cluster",
             "env": {
                 "NODE_ENV": "production",
