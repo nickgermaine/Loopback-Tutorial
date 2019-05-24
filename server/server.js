@@ -84,3 +84,23 @@ app.models.Role.find({where: {name: 'editor'}}, (err, roles) => {
     }
   }
 });
+
+
+app.models.RoleMapping.find((err, rm) => {
+  if(!err && rm.length === 0){
+    app.models.user.findOne({where: {role: "admin"}}, (userErr, user) => {
+      if(!userErr && users){
+        app.models.Role.find({where: {name: 'admin'}}, (roleErr, result) => {
+          if(!roleErr && result){
+            result.principals.create({
+              principalType: app.models.RoleMapping.USER,
+              principalId: user.id,
+            }, (err3, principal) => {
+              console.log('Created principal', err3, principal);
+            });
+          }
+        })
+      }
+    })
+  }
+})
