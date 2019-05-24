@@ -55,5 +55,9 @@
   "ImageFile": {
     "dataSource": "myFile",
     "public": true
+  },
+  "Comment": {
+    "dataSource": "db",
+    "public": true
   }
 }

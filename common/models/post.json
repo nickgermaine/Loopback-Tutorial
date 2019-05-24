@@ -40,6 +40,11 @@
       "type": "hasMany",
       "model": "PostImage",
       "foreignKey": ""
+    },
+    "Comments": {
+      "type": "hasMany",
+      "model": "Comment",
+      "foreignKey": ""
     }
   },
   "acls": [

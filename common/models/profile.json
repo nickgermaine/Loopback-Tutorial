@@ -38,6 +38,11 @@
       "type": "hasMany",
       "model": "Post",
       "foreignKey": ""
+    },
+    "Comment": {
+      "type": "hasMany",
+      "model": "Comment",
+      "foreignKey": ""
     }
   },
   "acls": [
