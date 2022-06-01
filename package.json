@@ -20,7 +20,7 @@
     "loopback-component-storage": "^3.6.0",
     "loopback-connector-mongodb": "^3.9.2",
     "serve-favicon": "^2.0.1",
-    "sharp": "^0.22.0",
+    "sharp": "^0.30.5",
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
